@@ -1,0 +1,38 @@
+blue_zone
+
+
+withdrawal_manage(): 
+Prime Target : blue_box_withdrawals
+
+        TG_OP = 'DELETE':
+        0. ON the vault_operation_active
+        1.  delete the record from blue_box_withdrawals table where id = OLD.id
+        2.  delete the record from blue_box_withdrawal_sources table where withdrawal_id = OLD.id
+        3.  delete the record from ledger_entries table where 
+                  bucket_id = OLD.bucket_id AND box_type  = 'WITHDRAW' AND box_event_id should common for box_events and ledger_entries AND txn_type = 'SPEND';
+        4. delete the record from box_events table where
+            bucket_id = OLD.bucket_id
+            AND box_type  = 'WITHDRAW'
+            AND amount    = OLD.total_amount
+            AND event_date = OLD.withdrawal_date;
+        5. delete the record from box_events table where
+            WHERE bucket_id = OLD.bucket_id
+			AND month_id = OLD.month_id
+            AND box_type  = 'SEALED';
+        6. update blue_box_state to is_sealed = FALSE, sealed_date = NULL 
+            WHERE bucket_id = OLD.bucket_id;
+        0. OFF the vault_operation_active
+
+Summary :
+The trigger is maintaining complete data integrity across your entire vault system:
+
+🧹 Cleans up child records (withdrawal_sources)
+🧹 Removes financial ledger entries (ledger_entries with SPEND)
+🧹 Deletes the box event records (both WITHDRAW and SEALED types)
+🔓 Unseals the bucket since the withdrawal is gone
+
+So when someone deletes a withdrawal, the trigger ensures no orphaned data remains anywhere in the system - it's like a domino effect of cleanup!
+
+
+    TG_OP = 'UPDATE':
+    

@@ -1,0 +1,2 @@
+CREATE TABLE
+    withdrawal_tags (id SERIAL PRIMARY KEY NOT NULL, label VARCHAR(50));

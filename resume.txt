@@ -1,0 +1,31 @@
+I do have worked in IT industry as a FrontEnd Developer (React.js) nearly 21 months , initially i worked on a startup called aptiway where my salary was 4.2 LPA and then i switched to another start up company called app solutions (stackular) there my salary was 7 LPA
+then i qute my job and took 5 months break from IT and then i started leaning towards PowerBI as career and learned SQL from scratch to medium level and felt PowerBI is not my cup of tea and dropped that idea, then i again wanted to restart my career in IT, so to get a job again i do need more skills then my current persuing skills
+so in resume we need projects, so i pick my frnd jewlery store and started building fullstack application with authentication and complete Admin panel and customer pov e-commers application (online visit only , no payments ) i learned Next.js with app routes so i lean towards DB in postgresql 
+so i relaised postgresql and SQL are closely connected so i learned about RDBMS with connecting tables and RBAC and RLS and triggers
+But as a single and amature developer i couldn't deliver the project so i abonded it and then anther frnd approached me with tambola game web application, so i build it at last i deployed it in vercel but DB with supabase lack of activity it got suspended so i abonded the project
+then i relaised that i don't lack skills i do lack confidence and need to learn more deep, so present i build my personal portfolio website with complete CRUD operations so i can upload my new projects to my portfolio any time with admin panel 
+so i do build it with Next.js + supabase and deployed it in vercel and put that url in my resume in projects session also,
+after that few suggested that single project won't shortlist in job application process so i build a familyShare application project with same stack but this project is about finance tracking and accountability between 2 individuals in a family 
+then i put it in resume
+so later i relaised i am developing intrest in DB related side rather than FrontEnd , because as expresed in FE i relaised that FE is majority about integration and UI, BUT BE and DB something else that caught my attenction
+
+NOW at moment while doing all these i do increase my career gap nearly close to 19 months and it still going because i am applying for job in naukari and linkedIn but this time i do need only remote job, so the chances of getting selected or even selection of my resume was became complicated 
+so i am honestly lost intest in job searching in those platforms
+i do need a job badly , present i am build another personal finance log Book applicationi guess you remember that 5 buckets project , still there is alot to learn and upskill but currently i do need a remote job badly
+can you help me 
+
+
+
+
+
+
+
+
+
+
+
+
+allocated = 5000
+spent = 100
+
+allocated (5000) - spent (100) = remains (4900) 
